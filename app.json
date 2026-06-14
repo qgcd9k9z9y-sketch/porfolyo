@@ -18,10 +18,10 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.muratkeskin.portfolio"
+      "bundleIdentifier": "com.patriotmrt"
     },
     "android": {
-      "package": "com.muratkeskin.portfolio",
+      "package": "com.patriotmrt",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#0F0F1A"
