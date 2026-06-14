@@ -11,18 +11,15 @@ metinleri ve dosyaları içerir.
 ## 1. Gizlilik Politikasını Yayınla (zorunlu)
 
 Play Console, "App content" bölümünde herkese açık bir gizlilik politikası
-**URL**'i ister. En kolay yol — GitHub Pages:
+**URL**'i ister. Bu zaten GitHub Pages ile yayında:
 
-1. Bu projeyi GitHub'a `git push` et (zaten git deposu hazır).
-2. Repo ayarlarından **Settings → Pages** açılıp `main` branch / `/` (root)
-   veya `/store-listing` klasörü seçilir.
-3. Yayınlanan URL şuna benzer olur:
-   `https://<kullanici-adi>.github.io/<repo-adi>/store-listing/privacy-policy.html`
-4. Bu URL'i Play Console → **App content → Privacy policy** alanına yapıştır.
+- **EN**: https://qgcd9k9z9y-sketch.github.io/porfolyo/store-listing/privacy-policy.html
+- **TR**: https://qgcd9k9z9y-sketch.github.io/porfolyo/store-listing/privacy-policy-tr.html
 
-> Alternatif: Hızlıca tek bir HTML dosyası barındırmak için
-> [Netlify Drop](https://app.netlify.com/drop) gibi bir servise dosyayı
-> sürükleyip bırakabilirsin (hesap gerektirmez, anında URL verir).
+Bu URL'lerden birini (önerilen: EN) Play Console → **App content → Privacy policy**
+alanına yapıştır.
+
+Repo: https://github.com/qgcd9k9z9y-sketch/porfolyo
 
 ## 2. Play Console → App content (zorunlu form'lar)
 
