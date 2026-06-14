@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Portfolio",
+    "slug": "portfolio-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "portfolio",
+    "userInterfaceStyle": "dark",
+    "backgroundColor": "#0F0F1A",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#0F0F1A"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.muratkeskin.portfolio"
+    },
+    "android": {
+      "package": "com.muratkeskin.portfolio",
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0F0F1A"
+      },
+      "permissions": [
+        "INTERNET"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "f4b22091-a1c1-406b-8cd8-d7cc78bca343"
+      }
+    },
+    "owner": "murat48"
+  }
+}
