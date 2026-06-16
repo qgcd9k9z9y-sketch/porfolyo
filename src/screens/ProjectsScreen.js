@@ -4,18 +4,11 @@ import {
   Text,
   StyleSheet,
   FlatList,
-  TouchableOpacity,
-  Linking,
 } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Ionicons } from '@expo/vector-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { projects } from '../data/portfolioData';
 import { colors, gradients } from '../theme/colors';
-
-function openLink(url) {
-  if (url) Linking.openURL(url).catch(() => {});
-}
 
 function ProjectCard({ item }) {
   return (
@@ -34,30 +27,6 @@ function ProjectCard({ item }) {
             <Text style={styles.tagText}>{tag}</Text>
           </View>
         ))}
-      </View>
-
-      <View style={styles.buttonRow}>
-        <TouchableOpacity
-          style={[styles.button, styles.githubButton]}
-          activeOpacity={0.8}
-          onPress={() => openLink(item.github)}
-        >
-          <Ionicons name="logo-github" size={16} color={colors.textPrimary} />
-          <Text style={styles.buttonText}>Code</Text>
-        </TouchableOpacity>
-
-        {item.live && (
-          <TouchableOpacity
-            style={[styles.button, styles.liveButton]}
-            activeOpacity={0.8}
-            onPress={() => openLink(item.live)}
-          >
-            <Ionicons name="open-outline" size={16} color="#0F0F1A" />
-            <Text style={[styles.buttonText, styles.liveButtonText]}>
-              Live Demo
-            </Text>
-          </TouchableOpacity>
-        )}
       </View>
     </LinearGradient>
   );
@@ -139,30 +108,4 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: colors.accentSecondary,
   },
-  buttonRow: {
-    flexDirection: 'row',
-    marginTop: 18,
-    gap: 10,
-  },
-  button: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderRadius: 12,
-    paddingVertical: 11,
-    paddingHorizontal: 16,
-    gap: 6,
-  },
-  githubButton: {
-    backgroundColor: colors.surfaceAlt,
-    borderWidth: 1,
-    borderColor: colors.border,
-  },
-  liveButton: { backgroundColor: colors.accentSecondary },
-  buttonText: {
-    fontSize: 13,
-    fontWeight: '700',
-    color: colors.textPrimary,
-  },
-  liveButtonText: { color: '#0F0F1A' },
 });
