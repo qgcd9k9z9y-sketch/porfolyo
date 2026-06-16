@@ -93,21 +93,21 @@ export const contact = {
   socials: [
     {
       label: 'GitHub',
-      handle: '@muratkeskin',
+      handle: '@murat48',
       icon: 'logo-github',
-      url: 'https://github.com/muratkeskin',
+      url: 'https://github.com/murat48',
     },
     {
       label: 'LinkedIn',
-      handle: '/in/muratkeskin',
+      handle: '/in/keskin-murat',
       icon: 'logo-linkedin',
-      url: 'https://linkedin.com/in/muratkeskin',
+      url: 'https://www.linkedin.com/in/keskin-murat/',
     },
     {
       label: 'Twitter',
-      handle: '@muratkeskin',
+      handle: '@patriotmurat',
       icon: 'logo-twitter',
-      url: 'https://twitter.com/muratkeskin',
+      url: 'https://twitter.com/patriotmurat',
     },
   ],
 };
